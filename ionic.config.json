@@ -1,0 +1,7 @@
+{
+  "name": "myPresentationApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

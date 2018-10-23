@@ -1,0 +1,62 @@
+<!--
+  Generated template for the SkillsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>My skills</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list class="listskill" inset>
+    <ion-list-header>
+      APPLICATIONS DEVELOPMENT
+    </ion-list-header>
+    <ion-item *ngFor="let appskill of appskills ">
+      <ion-icon name={{appskill.icon}} item-start></ion-icon>
+        <h3>{{ appskill.title }}</h3>
+        <p item-end>{{ appskill.strength }}</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="listskill" inset>
+    <ion-list-header>
+        WEB DEVELOPMENT
+    </ion-list-header>
+    <ion-item *ngFor="let webskill of webskills ">
+        <ion-icon name={{webskill.icon}} item-start></ion-icon>
+          <h3>{{ webskill.title }}</h3>
+          <p item-end>{{ webskill.strength }}</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="listskill" inset>
+    <ion-list-header>
+      DATABASE
+    </ion-list-header>
+    <ion-item *ngFor="let dbskill of dbskills ">
+        <ion-icon name={{dbskill.icon}} item-start></ion-icon>
+          <h3>{{ dbskill.title }}</h3>
+          <p item-end>{{ dbskill.strength }}</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="listskill" inset>
+    <ion-list-header>
+      LAW
+    </ion-list-header>
+    <ion-item *ngFor="let lawskill of lawskills ">
+      <h3>{{ lawskill.title }}</h3>
+    </ion-item>
+  </ion-list>
+    
+</ion-content>

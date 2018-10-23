@@ -1,0 +1,60 @@
+<!--
+  Generated template for the StudiesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>My studies</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <div padding>
+        <ion-segment [(ngModel)]="studies">
+          <ion-segment-button value="education">
+            Education
+          </ion-segment-button>
+          <ion-segment-button value="training">
+            Training
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="studies">
+        <ion-list *ngSwitchCase="'education'">
+          <ion-item>
+            <h2>Specialised Master in ICT Law</h2>
+            <h3>University of Namur</h3>
+            <p>Mention: cum laude</p>
+          </ion-item>
+          <ion-item>
+            <h2>Master in Law</h2>
+            <h3>Université Libre de Bruxelles</h3>
+            <p>Mention: cum laude</p>
+            <p>Option: Intellectual Property</p>
+          </ion-item>
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'training'">
+          <ion-item>
+            <h2>Mobile Development iOS / Android</h2>
+            <p>May-Oct 2018</p>
+          </ion-item>
+          <ion-item>
+            <h2>Introduction to programming</h2>
+            <p>Feb-March 2018</p>
+          </ion-item>
+          <ion-item>
+            <h2>Self-Leadership</h2>
+            <p>Nov-Dec 2017</p>
+          </ion-item>
+        </ion-list>
+      </div>
+
+</ion-content>
